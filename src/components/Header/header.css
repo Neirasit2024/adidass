@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header_logo{
+        font-size: 50px;
+    }
+
+    .header_pages{
+        display: flex;
+        gap: 30px;
+        font-size: 15px;
+    }
+
+    .header_search_buttons{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 25px;
+
+        .search_button{
+            position: relative;
+            input{
+                width: 150px;
+                height: 30px;
+                border: 1px solid greenyellow;
+                padding-left: 10px;
+                border-radius: 10px;
+                outline: none;
+             }
+
+             button{
+                border: none;
+                background: none;
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                font-size: 14px;
+             }
+
+         }
+
+    }
+}
+a{
+    text-decoration: none;
+}
