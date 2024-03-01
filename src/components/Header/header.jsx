@@ -9,29 +9,29 @@ import { SlBasketLoaded } from "react-icons/sl";
 
 
 
-const Header = () => {
+export const Header = () => {
     return (
         <header id='header'>
             <div className="container">
                 <div className="header">
                     <div className="header_logo">
-                        <Link to=""><CgAdidas /></Link>
+                        <Link to="/home"><CgAdidas /></Link>
                     </div>
                     <div className="header_pages">
-                        <Link to="">MEN</Link>
-                        <Link to="">WOMEN</Link>
-                        <Link to="">KIDS</Link>
-                        <Link to="">SALE</Link>
-                        <Link to="">3 STRIPE LIFE</Link>
+                        <Link to="/men">MEN</Link>
+                        <Link to=".women">WOMEN</Link>
+                        <Link to="/kids">KIDS</Link>
+                        <Link to="/sale">SALE</Link>
+                        <Link to="/life">3 STRIPE LIFE</Link>
                     </div>
                     <div className="header_search_buttons">
                         <div className="search_button">
                         <input type="text" placeholder='search product' />
                         <button><FaSearch /></button>
                         </div>
-                        <Link to=""><RiAdminLine /></Link>
-                        <Link to=""><SlLike /></Link>
-                        <Link to=""><SlBasketLoaded /></Link>
+                        <Link to="/admin"><RiAdminLine /></Link>
+                        <Link to="/like"><SlLike /></Link>
+                        <Link to="/basket"><SlBasketLoaded /></Link>
                     </div>
                 </div>
             </div>

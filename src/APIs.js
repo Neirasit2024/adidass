@@ -1,0 +1,1 @@
+export const API = "ttp://localhost:3000/data"
