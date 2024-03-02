@@ -9,6 +9,7 @@ import Men from '../Pages/Men/men';
 import Basket from '../Pages/Basket/basket';
 import Like from '../Pages/Like/like';
 import Admin from '../Pages/Admin/admin';
+import Detail from '../Pages/Detail';
 
 const RoutesPages = () => {
     const PAGES = [
@@ -18,6 +19,8 @@ const RoutesPages = () => {
         {path: "/kids", element: <Kids/>, key: 4},
         {path: "/sale", element: <Sale/>, key: 5},
         {path: "/life", element: <Life/>, key: 6},
+        {path: "/detail/:id", element: <Detail/>, key: 6},
+        
     ]
     const PAGES_BUTTONS = [
         {path: "/admin", element: <Admin/>, key: 1},
