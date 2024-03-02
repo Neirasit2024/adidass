@@ -6,6 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import { RiAdminLine } from "react-icons/ri";
 import { SlLike } from "react-icons/sl";
 import { SlBasketLoaded } from "react-icons/sl";
+import { HiSaveAs } from "react-icons/hi";
 
 
 
@@ -32,6 +33,7 @@ export const Header = () => {
                         <Link to="/admin"><RiAdminLine /></Link>
                         <Link to="/like"><SlLike /></Link>
                         <Link to="/basket"><SlBasketLoaded /></Link>
+                        <Link to="/save"><HiSaveAs /></Link>
                     </div>
                 </div>
             </div>

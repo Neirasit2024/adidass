@@ -6,8 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const {read, readSneakers} = useSneakers()
-    const navigate = 
-    useNavigate()
+    const navigate = useNavigate()
    useEffect(()=>{readSneakers()},[])
     
     return (
@@ -16,7 +15,7 @@ const Home = () => {
                 <div className="home">
                     {
                         read.map(el=>(
-                                <div onClick={()=>navigate(`/id ${el.id}`)}  className="card">
+                                <div onClick={()=>navigate(`/detail/${el.id}`)}  className="card">
                                 <img src={el.image} alt="" />
                                 <h3 style={{
                                     display: "flex",
