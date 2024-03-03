@@ -23,6 +23,10 @@ const SaveContext = ({children}) => {
     setRead(data)
     }
 
+    async function editSneakers(newSneakers){
+        await axios.patch(API, newSneakers)
+    }
+
   
 
 

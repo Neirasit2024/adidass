@@ -7,10 +7,12 @@ import { RiAdminLine } from "react-icons/ri";
 import { SlLike } from "react-icons/sl";
 import { SlBasketLoaded } from "react-icons/sl";
 import { HiSaveAs } from "react-icons/hi";
+import { useLike } from '../../context/LikeContext';
 
 
 
 export const Header = () => {
+    const {order} = useLike()
     return (
         <header id='header'>
             <div className="container">
@@ -37,6 +39,7 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
+            {/* <p className='length'>{order.length}</p> */}
         </header>
     );
 };

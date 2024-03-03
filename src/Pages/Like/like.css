@@ -1,0 +1,42 @@
+.likes{
+    margin-top: 50px;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+
+
+
+    .like{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        width: 250px;
+        height: 300px;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px;
+
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .like_text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button{
+                border: none;
+              font-size: 20px;
+              background-color: red;
+            }
+        }
+      
+    }
+}
+
+   
