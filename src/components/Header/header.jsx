@@ -24,8 +24,6 @@ export const Header = () => {
                         <Link to="/men">MEN</Link>
                         <Link to=".women">WOMEN</Link>
                         <Link to="/kids">KIDS</Link>
-                        <Link to="/sale">SALE</Link>
-                        <Link to="/life">3 STRIPE LIFE</Link>
                     </div>
                     <div className="header_search_buttons">
                         <div className="search_button">

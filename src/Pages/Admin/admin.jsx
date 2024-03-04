@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import "./admin.css"
 import { useSneakers } from '../../context/SaveContext';
+
+
+let types = [
+    "MEN", 
+    "WOMEN", 
+    "KIDS", 
+]
 const Admin = () => {
     const {createSneakers}  = useSneakers()
 
@@ -13,6 +20,8 @@ const Admin = () => {
     const [price, setPrice]= useState("")
     const [color, setColor]= useState("")
     const [size, setSize]= useState("")
+    const [type, setType] = useState("")
+    const  [br, setBr] = useState(false)
 
     function handleSneakers(){
         let obj ={
@@ -24,7 +33,6 @@ const Admin = () => {
             state, 
             price, 
             color, 
-            size
         }
         createSneakers(obj)
         setImage("")
@@ -35,9 +43,17 @@ const Admin = () => {
         setMaterial("")
         setColor("")
         setPrice("")
-        setSize("")
 
+
+      
     }
+   const  chanch =(e)=>{
+    let price1 = e.target.value
+
+    setPrice(parseFloat(price1))
+    // setPrice(price1)
+
+   }
 
 
     return (
@@ -50,15 +66,16 @@ const Admin = () => {
                     <input onChange={(e)=>setImage(e.target.value)} value={image} type="text" placeholder='img ...'/>
                 </div>
                 <div className="admin_input">
-                    <input onChange={(e)=>setTitle(e.target.value)} value={title} type="text" placeholder='name ...'/>
+                    <input  onChange={(e)=>setTitle(e.target.value)} value={title} type="text" placeholder='name ...'/>
                     <input onChange={(e)=>setModel(e.target.value)} value={model} type="text" placeholder='model ...'/>
                     <input onChange={(e)=>setSeason(e.target.value)} value={season} type="text" placeholder='season ...'/>
                     <input onChange={(e)=>setMaterial(e.target.value)} value={material} type="text" placeholder='material ...'/>
-                    <input onChange={(e)=>setState(e.target.value)} value={state} type="text" placeholder='state ...'/>
+                    <input  onChange={(e)=>setState(e.target.value)} value={state} type="text" placeholder='state ...'/>
                     <div className="admin_input_pcs">
-                    <input onChange={(e)=>setPrice(e.target.value)} value={price} type="text" placeholder='price ...'/>
+                    <input maxLength={3} onChange={(e)=>chanch(e)} value={price} type="text" placeholder='price ...'/>
                     <input onChange={(e)=>setColor(e.target.value)} value={color} type="text" placeholder='color ...'/>
-                    <input onChange={(e)=>setSize(e.target.value)} value={size} type="text" placeholder='size ...'/>
+                    <input onChange={(e)=>setType(e.target.value)} value={type}  type="text" />
+
                     </div>
               </div>
                 </div>

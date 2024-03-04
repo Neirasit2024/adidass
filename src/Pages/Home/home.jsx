@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
-    const {read, readSneakers} = useSneakers()
+    const {read, readSneakers, deleteDetail} = useSneakers()
     const navigate = useNavigate()
    useEffect(()=>{readSneakers()},[])
     
@@ -15,14 +15,13 @@ const Home = () => {
                 <div className="home">
                     {
                         read.map(el=>(
-                                <div onClick={()=>navigate(`/detail/${el.id}`)}  className="card">
-                                <img src={el.image} alt="" />
-                                <h3 style={{
-                                    display: "flex",
-                                    justifyContent: "space-between"
-                                }}>
-                                    {el.title} <p>{el.price}</p></h3>
-                                
+                                <div  className="card">
+                                <img onClick={()=>navigate(`/detail/${el.id}`)}  src={el.image} alt="" />
+                                <h2 >{el.title}</h2>
+                                <div className="card_text">
+                                <p>{el.price}$ </p>
+                                <button onClick={()=>deleteDetail(el.id)}>delete</button>
+                                </div>
                             </div>
                         ))
                     }

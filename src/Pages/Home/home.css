@@ -9,17 +9,32 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 200px;
-        height: 200px;
         border: 2px solid green;
         padding: 10px;
         border-radius: 10px;
+        position: relative;
 
 
         img{
             width: 200px;
-            height: 150px;
+            height: 200px;
             border-radius: 10px;
+        }
+
+     
+
+        p{
+            background: white;
+            color: black;
+            border-radius: 5px;
+            padding: 3px;
+        position: absolute;
+        left: 15px;
+        top: 180px;
+        z-index: 1;
+        }
+        button{
+            border: none;
         }
 
         .buttons{
@@ -33,5 +48,21 @@
                 font-size: 20px;
             }
         }
+    }
+
+    .card:hover{
+        box-shadow: 0 0 10px 4px green;
+        h2{
+            color: green;
+        }
+        p{
+            top: 175px;
+            font-size: 20px;
+            color: green;
+        }
+        button{
+            color: green;
+        }
+
     }
 }

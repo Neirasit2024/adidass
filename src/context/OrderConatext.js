@@ -17,10 +17,16 @@ const OrderContext = ({children}) => {
         setOrder(data)
     }
 
+    async function deleteOrder(id){
+        await axios.delete(`${ORDER}/${id}`)
+        readOrder()
+    }
+
     const values = {
         addOrder,
         order,
         readOrder, 
+        deleteOrder,
     }
     return (
         <orderContext.Provider value={values}>

@@ -1,0 +1,71 @@
+.basket{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 15px 0 0;
+
+    .div{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        img{
+            border-radius:  10px 0  0 10px ;
+            width: 250px;
+            height: 250px;
+        }
+
+        .order_information{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    .order_buttons{
+
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+        .delete{
+            width: 100px;
+            height: 30px;
+            background-color: none;
+            border: none;
+        }
+
+        .button_plMi{
+            width: 150px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            .plus{
+                font-size: 20px;
+                width: 50px;
+                height: 30px;
+                border: 2px solid white;
+                border-radius: 10px;
+            }
+            .minus{
+                text-align: center;
+                font-size: 20px;
+                width: 50px;
+                height: 30px;
+                border: 2px solid white;
+                border-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home/home';
-import Life from '../Pages/Life/life';
-import Sale from '../Pages/Sale/sale';
 import Kids from '../Pages/Kids/kids';
 import Women from '../Pages/Women/women';
 import Men from '../Pages/Men/men';
@@ -19,9 +17,7 @@ const RoutesPages = () => {
         {path: "/men", element: <Men/>, key: 2},
         {path: "/women", element: <Women/>, key: 3},
         {path: "/kids", element: <Kids/>, key: 4},
-        {path: "/sale", element: <Sale/>, key: 5},
-        {path: "/life", element: <Life/>, key: 6},
-        {path: "/detail/:id", element: <Detail/>, key: 6},
+        {path: "/detail/:id", element: <Detail/>, key: 5},
         
     ]
     const PAGES_BUTTONS = [

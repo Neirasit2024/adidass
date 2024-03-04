@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { LIKE, ORDER } from '../APIs';
+import { LIKE} from '../APIs';
 import axios from 'axios';
 
 const likeContext = createContext()

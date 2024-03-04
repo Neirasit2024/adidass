@@ -1,0 +1,52 @@
+.save{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+
+    .save_tops{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        .save_img{
+            width: 250px;
+            height: 360px;
+            border: 2px solid green;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .save_input{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 460px;
+
+            input{
+                height: 40px;
+                border: 2px solid green;
+                border-radius: 10px;
+                padding-left: 10px;
+                outline: none;
+            }
+
+        }
+    }
+    button {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        border: 2px solid green;
+    }
+    button:hover{
+        box-shadow: 0 0 10px 2px white;
+        border: 2px solid white;
+        background-color: green;
+    }
+}

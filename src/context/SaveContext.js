@@ -22,10 +22,15 @@ const SaveContext = ({children}) => {
       let {data} =  await axios(API)
     setRead(data)
     }
-
-    async function editSneakers(newSneakers){
-        await axios.patch(API, newSneakers)
+    async function deleteDetail(id){
+        await axios.delete(`${API}/${id}`)
+        readSneakers()
     }
+    
+
+    // async function editSneakers(newSneakers){
+    //     await axios.patch(API, newSneakers)
+    // }
 
   
 
@@ -37,6 +42,7 @@ const SaveContext = ({children}) => {
         createSneakers,
         readSneakers,
         read,
+        deleteDetail,
    
     }
     return (
