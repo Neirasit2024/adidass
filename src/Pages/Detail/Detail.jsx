@@ -232,17 +232,33 @@ const Detail = () => {
     
 
     function Size(el){
-         obj.SIZE.some(elem=> setSize(elem === el))
+         obj.SIZE.find(elem=> setSize(elem === el))
     }
     
+    console.log(size)
+
+
+
+
     // const [like, setLike]= useState( false)
 const id =  useParams()
 console.log(id)
+
+
+
+
+
 
 let Snike = async ()=> {
     let {data} = await axios(`http://localhost:3000/data/${id.id}`)
     setList(data)
 }
+
+
+
+
+
+
 function handleLike(id){
     let oneSneakers = read.filter(el=> el.id === id)
     if(like.map(el=> el.id !== oneSneakers[0].id)){
@@ -257,6 +273,14 @@ function handleLike(id){
 //         return alert("have element")
 //     }
 }
+
+
+
+
+
+
+
+
 
 function handleOrder(id){
    
@@ -339,7 +363,7 @@ useEffect(()=>{
                <div  className="btn">
                {
                     obj.CHILDREN.map(el=>(
-                        <button onClick={()=>Size(el)} >{el}</button>
+                        <button onClick={()=>setSize(el)} >{el}</button>
                     ))
                 }
                </div>
@@ -347,9 +371,10 @@ useEffect(()=>{
                 <div className="btn">
                 {
                     obj.SIZE.map(el=>(
-                            <button >{el}</button>
+                            <button onClick={()=>setSize(el)}>{el}</button>
                     ))
-                }
+                } 
+
                 </div>
                 </div>
             </div>
