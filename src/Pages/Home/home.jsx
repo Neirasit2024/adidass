@@ -17,9 +17,12 @@ const Home = () => {
                         read.map(el=>(
                                 <div  className="card">
                                 <img onClick={()=>navigate(`/detail/${el.id}`)}  src={el.image} alt="" />
-                                <h2 >{el.title}</h2>
+                                <h2 >{el.title} </h2> 
+                                <h4>{el.fake}</h4>
+
                                 <div className="card_text">
                                 <p>{el.price}$ </p>
+
                                 <button onClick={()=>deleteDetail(el.id)}>delete</button>
                                 </div>
                             </div>

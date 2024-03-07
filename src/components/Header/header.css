@@ -15,7 +15,7 @@
     }
 
     .header_search_buttons{
-        width: 400px;
+        width: 600px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -41,6 +41,27 @@
                 font-size: 14px;
              }
 
+         }
+         .balance{
+            width: 150px;
+            display: flex;
+            margin-top: 10px;
+            border: 2px solid green;
+            padding: 5px 10px;
+            border-radius: 15px;
+            position: absolute;
+            right: 40px;
+            top: 70px;
+
+            p{
+                font-size: 15px;
+            }
+         }
+         button{
+            font-size: 20px;
+            border: 2px solid green;
+            padding: 5px 10px;
+            border-radius: 10px;
          }
 
     }

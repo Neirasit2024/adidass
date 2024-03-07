@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./header.css"
 import { Link } from 'react-router-dom';
 import { CgAdidas } from "react-icons/cg";
@@ -8,10 +8,13 @@ import { SlLike } from "react-icons/sl";
 import { SlBasketLoaded } from "react-icons/sl";
 import { HiSaveAs } from "react-icons/hi";
 import { useLike } from '../../context/LikeContext';
+import { useSelector } from 'react-redux';
 
 
 
 export const Header = () => {
+    const balance = useSelector(state => state.balance)
+    const [display, setDisplay] = useState(false)
     const {order} = useLike()
     return (
         <header id='header'>
@@ -34,6 +37,11 @@ export const Header = () => {
                         <Link to="/like"><SlLike /></Link>
                         <Link to="/basket"><SlBasketLoaded /></Link>
                         <Link to="/save"><HiSaveAs /></Link>
+                        <div style={{display: display ? "flex" : "none", gap: "10px", flexDirection: "column", zIndex: "1"}}  className="balance">
+                            <p>cash: {balance}</p>
+                            <p>expensess: {}</p>
+                        </div>
+                        <button onClick={()=>setDisplay(!display)}>bl && ex</button>
                     </div>
                 </div>
             </div>

@@ -32,38 +32,13 @@
                 border-radius: 20px;
                 font-family: sans-serif;
             }
-
+            
             .list_components{
-              
+                
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                .components_block{
-                   .tittle{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-                   }
-                   
-                    h1{
-                        font-size: 40px;
-                        background: none;
-                    }
-
-                    .block_button{
-                        display: flex;
-                        gap: 20px;
-                        background: none;
-                        
-                        button{
-                            border: none;
-                            background: none;
-                            font-size: 40px;
-                            
-                        }
-                    }
-
-                }
+                
 
               .block_divs{
                 display: flex;
@@ -158,4 +133,32 @@
             }
            }
     }
+}
+
+.components_block{
+    .tittle{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   }
+   
+    h1{
+        font-size: 40px;
+        background: none;
+        background: none;
+    }
+
+    .block_button{
+        display: flex;
+        gap: 20px;
+        background: none;
+        
+        button{
+            border: none;
+            background: none;
+            font-size: 40px;
+            
+        }
+    }
+
 }

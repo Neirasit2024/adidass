@@ -12,6 +12,10 @@
         justify-content: center;
         gap: 100px;
 
+       .img_price{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         .admin_img{
             width: 250px;
             height: 360px;
@@ -21,7 +25,24 @@
             align-items: center;
             justify-content: center;
             
+
+
+            
+            
         }
+        .admin_input_pcs{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input{
+              height: 40px;
+              border: 2px solid green;
+              border-radius: 10px;
+              padding-left: 10px;
+              outline: none;
+            }
+          }
+       }
         .admin_input{
             display: flex;
             flex-direction: column;
@@ -34,6 +55,12 @@
                 border-radius: 10px;
                 padding-left: 10px;
                 outline: none;
+            }
+            div{
+                button{
+                    width: 100px;
+
+                }
             }
 
         }

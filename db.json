@@ -1,59 +1,30 @@
 {
   "data": [
     {
-      "id": "2fff",
+      "id": "f0c0",
       "image": "",
-      "title": "cjdhsihvrw",
-      "model": "vervrew",
-      "season": "vrewver",
-      "material": "vrewvr",
-      "state": "vrewvre",
-      "price": 123,
-      "color": ""
+      "title": "adidass",
+      "model": "aoife",
+      "season": "efewfew",
+      "material": "fewfew",
+      "state": "ewfwe",
+      "genus": "men",
+      "price": 124,
+      "color": "white",
+      "fake": "original"
     },
     {
-      "id": "c545",
+      "id": "df7c",
       "image": "",
-      "title": "vfewvr",
-      "model": "vewr",
-      "season": "vrewvr",
-      "material": "ewvre",
-      "state": "vrewvr",
-      "price": 123,
-      "color": "wdfv"
-    },
-    {
-      "id": "f70f",
-      "image": "",
-      "title": "qdtqfrfr",
-      "model": "fewfr",
-      "season": "frewfrwe",
-      "material": "frefre",
-      "state": "erwfwr",
-      "price": 123,
-      "color": "4fwfr"
-    },
-    {
-      "id": "a088",
-      "image": "",
-      "title": "rfegreg",
-      "model": "regregr",
-      "season": "fewfer",
-      "material": "frewfr",
-      "state": "ewferw",
-      "price": 123,
-      "color": "fwfr"
-    },
-    {
-      "id": "530b",
-      "image": "",
-      "title": "wwiurnfir",
-      "model": "grgrr",
-      "season": "grgre",
-      "material": "fefre",
-      "state": "ferfre",
-      "price": 345,
-      "color": "frf"
+      "title": "adidass",
+      "model": "kdjnfr",
+      "season": "WINTER",
+      "material": "ver",
+      "state": "rbebre",
+      "genus": "xccdsvd",
+      "price": 254,
+      "color": "whitte",
+      "fake": "original"
     }
   ],
   "like": [
@@ -67,17 +38,6 @@
       "state": "fewf",
       "price": 123,
       "color": "34fewf"
-    },
-    {
-      "id": "2fff",
-      "image": "",
-      "title": "cjdhsihvrw",
-      "model": "vervrew",
-      "season": "vrewver",
-      "material": "vrewvr",
-      "state": "vrewvre",
-      "price": 123,
-      "color": ""
     }
   ],
   "order": []

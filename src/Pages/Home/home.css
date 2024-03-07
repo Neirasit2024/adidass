@@ -9,6 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 5px;
         border: 2px solid green;
         padding: 10px;
         border-radius: 10px;
@@ -36,6 +37,7 @@
         button{
             border: none;
         }
+        
 
         .buttons{
             display: flex;
@@ -53,6 +55,9 @@
     .card:hover{
         box-shadow: 0 0 10px 4px green;
         h2{
+            color: green;
+        }
+        h4{
             color: green;
         }
         p{

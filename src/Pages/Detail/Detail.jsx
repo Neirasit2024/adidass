@@ -10,6 +10,7 @@ import { useSneakers } from "../../context/SaveContext";
 import { useOrder } from "../../context/OrderConatext";
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowUp } from "react-icons/sl";
+import { useDispatch } from "react-redux";
 
 
 
@@ -219,6 +220,8 @@ let colors ={
 
 
 const Detail = () => {
+    const {order} = useOrder
+    const dispatch = useDispatch()
     const {addOrder} = useOrder()
     const {read} = useSneakers()
     const {addToCard, like} = useLike()
@@ -226,6 +229,8 @@ const Detail = () => {
     const [deta, setDeta] = useState(false)
     const [size, setSize] = useState("")
     const [sdel, setSdel] = useState(false)
+
+    // const state = useSelector(state=>state.cash)
 
 
     console.log(colors.color.length);
@@ -285,11 +290,21 @@ function handleLike(id){
 function handleOrder(id){
    
     let oneSneakers = read.filter(el=> el.id === id)
+
+    // if(order.map(el=>el.includes(!id))){
+
+        dispatch({type: "ADD_BALANCE", payload: oneSneakers[0].price })
+        addOrder(oneSneakers[0])
+    // }else{
+    //     return alert("please yes element")
+    // }
     
-            addOrder(oneSneakers[0])
+
+    
     console.log(oneSneakers[0]);
 
 }
+
 
 // function deleteDetail(id){
 //  read.map(el=>el.id !== id)
@@ -324,6 +339,9 @@ function handleOrder(id){
 useEffect(()=>{
     Snike()
 }, [])
+
+
+
     return (
     <section id="list">
         <div className="container">
